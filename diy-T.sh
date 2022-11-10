@@ -19,7 +19,7 @@ echo "RELEASE_KEY_ALIAS=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 echo "RELEASE_STORE_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties */
 #xwalk修复
-#sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/nikolin601\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
+sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/nikolin601\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
 #名称修改
 sed -i 's/TVBox/元道/g' $CURRENT_DIR/$DIR/app/src/main/res/values-zh/strings.xml
 sed -i 's/TVBox/元道/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
@@ -45,7 +45,7 @@ sed -i 's/FrameLayout/LinearLayout/g' $CURRENT_DIR/$DIR/app/src/main/res/layout/
 sed -i 's/width=\"wrap_content\"/width=\"match_parent\"/g' $CURRENT_DIR/$DIR/app/src/main/res/layout/item_series.xml
 sed -i 's/@dimen\/vs_190/match_parent/g' $CURRENT_DIR/$DIR/app/src/main/res/layout/item_series.xml */
 #FongMi的jar支持
-echo "" >>$CURRENT_DIR/$DIR/app/proguard-rules.pro
-echo "-keep class com.google.gson.**{*;}" >>$CURRENT_DIR/$DIR/app/proguard-rules.pro
+//echo "" >>$CURRENT_DIR/$DIR/app/proguard-rules.pro
+//echo "-keep class com.google.gson.**{*;}" >>$CURRENT_DIR/$DIR/app/proguard-rules.pro
 
 echo 'DIY end'
