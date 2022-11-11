@@ -19,7 +19,9 @@ cd $DIR
 #echo "RELEASE_STORE_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 #echo "RELEASE_KEY_PASSWORD=TVBoxOSC" >>$CURRENT_DIR/$DIR/gradle.properties
 #xwalk修复
-sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/nikolin601\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
+//sed -i 's/download.01.org\/crosswalk\/releases\/crosswalk\/android\/maven2/raw.githubusercontent.com\/nikolin601\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
+sed -i 's/home.jundie.top:81\/xwalk\/maven2/raw.githubusercontent.com\/nikolin601\/TVBoxDIY\/main/g' $CURRENT_DIR/$DIR/build.gradle
+
 #名称修改
 sed -i 's/TVBox/元道/g' $CURRENT_DIR/$DIR/app/src/main/res/values-zh/strings.xml
 sed -i 's/TVBox/元道/g' $CURRENT_DIR/$DIR/app/src/main/res/values/strings.xml
